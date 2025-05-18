@@ -1,74 +1,56 @@
-# Getting Started with Create React App
+# EmoCare-Emotion-Aware Chatbot (Mental Health Support)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Emocare is a Flask-based AI chatbot that is designed to provide mental health support by detecting emotions in user messages and generating empathetic responses based on those emotions. It leverages emotion detection models and GPT-3.5 for generating context-aware responses, creating a more human-like interaction for users seeking emotional support.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Emotion Detection**: Automatically identifies emotions such as joy, sadness, anger, fear, and surprise.
+- **Emotion-Based Response**: Dynamically generates empathetic replies using OpenAI GPT-3.5 based on the detected emotions.
+- **Fallback Manual Detection**: In case of model failure, a basic keyword-based emotion detection method is used.
+- **Real-Time Interaction**: Chat directly via terminal or connect via API.
+- **CORS Enabled**: Allows easy connection with front-end frameworks such as React.js.
 
-### `npm start`
+🛠 How It Works
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+User sends a message.
+Emotion Detection: The message is processed using a Hugging Face model (distilroberta) to detect the underlying emotion.
+Response Generation: Based on the detected emotion, an appropriate response is generated using GPT-3.5.
+Send the response back to the user.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🧩 Models Used
 
-### `npm test`
+Emotion Detection: j-hartmann/emotion-english-distilroberta-base
+Response Generation: OpenAI GPT-3.5 (Chat Completion API)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Screenshots
+<img width="1470" alt="Screenshot 2025-05-18 at 12 16 55 PM" src="https://github.com/user-attachments/assets/d14b985c-f32c-41da-904f-b967ecf5d0aa" />
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="1463" alt="Screenshot 2025-04-26 at 7 06 33 PM" src="https://github.com/user-attachments/assets/9fef210a-dae0-47bb-bc4f-ad0812b70ce2" />
+![PHOTO-2025-05-08-18-14-47](https://github.com/user-attachments/assets/4fe04dc3-a90d-46c6-be11-a589357eb173)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="1462" alt="Screenshot 2025-04-26 at 7 06 40 PM" src="https://github.com/user-attachments/assets/88ec6515-c21e-4330-b63f-96fa421d5d7f" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img width="1468" alt="Screenshot 2025-04-26 at 7 16 36 PM" src="https://github.com/user-attachments/assets/c471dcc1-4d61-438b-a7d7-b97fb016f224" />
 
-### `npm run eject`
+<img width="1460" alt="Screenshot 2025-04-26 at 7 16 55 PM" src="https://github.com/user-attachments/assets/09471394-f416-463c-bb33-c29d814db532" />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📝 Future Plans
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Add conversation history/memory for more natural chats.
+Customize responses for different severity levels (e.g., mild sadness vs. depression).
+Support multiple languages for emotion detection and response.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🤝 Contributing
 
-## Learn More
+Contributions, suggestions, and pull requests are welcome! Feel free to open an issue to discuss changes or improvements.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📄 License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Licensed under the MIT License.
 
-### Code Splitting
+🎯 Key Takeaway
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This is not just a chatbot. It is an emotionally aware AI system that understands how the user feels and responds accordingly to support mental health.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Mindly
-# Mindly
-# EmoCare
-# EmoCare
