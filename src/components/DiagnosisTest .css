@@ -1,0 +1,110 @@
+.diagnosis-test-container {
+    background:url('/Users/umanginigam/Documents/emotion/mental-health-site/public/4743565.png') no-repeat center cover;
+    padding: 2rem;
+    max-width: 700px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .diagnosis-test-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #6c63ff;
+    margin-bottom: 1rem;
+    position: relative;
+    top: -3rem;
+  }
+  
+  /* Question styling */
+  .question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1.5rem 0 0.5rem;
+    color: #333;
+  }
+  
+  /* Select dropdown styling */
+  .select-dropdown {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .select-dropdown:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+  }
+  
+  /* Submit button styling */
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #6c63ff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #81ecec;
+  }
+  
+  /* Result styling */
+  .result {
+    font-size: 1.5rem;
+  color: #333;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #eaf7ff;
+  border-radius: 5px;
+  border: 1px solid #b3e5fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+  .result p {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .diagnosis-test-container {
+      padding: 1rem;
+    }
+  
+    .diagnosis-test-title {
+      font-size: 1.8rem;
+    }
+  
+    .question {
+      font-size: 1rem;
+    }
+  
+    .submit-button {
+      font-size: 0.9rem;
+    }
+  
+    .result {
+      font-size: 1rem;
+    }
+  }
+  
